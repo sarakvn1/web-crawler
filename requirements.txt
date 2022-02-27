@@ -1,0 +1,15 @@
+pillow
+scrapy-djangoitem
+scrapy
+celery
+djangorestframework
+django==3.2
+redis
+twisted
+django-celery-beat
+crochet
+scrapydo
+
+
+#celery -A webcrawler beat -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler
+#celery -A webcrawler worker --loglevel=INFO --concurrency 1 -P solo
